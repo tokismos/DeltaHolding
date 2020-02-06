@@ -1,0 +1,93 @@
+<!--
+         ===================================================================
+        ||          designed  LEKRIF khalid & developed by RAISS Ahmed       ||
+         ===================================================================
+-->
+
+    
+    <a class="navbar-brand" href="index.html" ><img src="images/desktop/Logo.png"></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-center d-flex flex-fill">
+                    <li class="nav-item dropdown dmenu">
+                        <a class="nav-link dropdown-toggle" href="entreprise.html" id="navbardrop" data-toggle="dropdown">
+                                                Entreprise
+                                                </a>
+                        <div class="dropdown-menu sm-menu">
+                            <a class="dropdown-item" href="entreprise.html#rock">ROCK SYSTEMS</a>
+                            <a class="dropdown-item " href="entreprise.html#engagement" >NOS VALEURS</a>
+                            <a class="dropdown-item" href="entreprise.html#groupDelta">GROUPE DELTAHOLDING</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dmenu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                                    Produits
+                                                    </a>
+                        <div class="dropdown-menu sm-menu">
+                            <a class="dropdown-item" href="produit.html">Tous les produits</a>
+                            <a class="dropdown-item" href="detailsProduit.html">FENÊTRE /PORTE COULISSANTE</a>
+                            <a class="dropdown-item" href="detailsProduit2.html">FENÊTRE /PORTE A FRAPPE</a>
+                            <a class="dropdown-item" href="#">MUR RIDEAU</a>
+                            <a class="dropdown-item" href="#">CLOISON AMOVIBLE</a>
+                            <a class="dropdown-item" href="#">GARDE-CORPS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agence.html">Agences</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="actualites.html">Actualités</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacte.html">Contact</a>
+                    </li>
+                    
+                    
+
+                     
+                </ul>
+                <ul class="navbar-nav ContacterNav">
+
+                            <li class="nav-item  ">
+                                    <a class="nav-link" href="#">
+                                            <i><img src="images/desktop/PHONE.png"   title="+212 5 3762 1700/20" class="iconNav tele" ></i> 
+                                             <label>+212 5 3762 1700/20</label>
+                                         </a>
+                            </li>
+                            <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                               
+                                                <i><img src="images/desktop/MAIL.png" title="rock@systems.ma" class="iconNav mail" ></i> 
+                                                <label>rock@systems.ma</label>
+                                            </a>
+                            </li>
+
+
+                    </ul>
+                 
+            
+           
+    </div>
+    
+    <script>
+        $('.navbar-light .dmenu').hover(function() {
+            $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+        }, function() {
+            $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+        }); 
+    </script>
+    <script>
+            if ($(window).innerWidth() >= 1059 ) {
+                $(".tele").removeAttr("title");
+                $(".mail").removeAttr("title");
+                    }
+    </script>
+    <script>
+        new Tippy('.tele');
+        new Tippy('.mail');
+
+    </script>
+    

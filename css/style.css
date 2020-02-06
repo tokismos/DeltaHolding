@@ -1,0 +1,1169 @@
+/*
+===================================================================
+||          designed  LEKRIF khalid & developed by RAISS Ahmed       ||
+===================================================================
+ */
+
+
+  /* Start Animation div engagement index */
+
+ @-webkit-keyframes swing
+ {
+     15%
+     {
+         -webkit-transform: translateX(5px);
+         transform: translateX(5px);
+     }
+     30%
+     {
+         -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+     } 
+     50%
+     {
+         -webkit-transform: translateX(3px);
+         transform: translateX(3px);
+     }
+     65%
+     {
+         -webkit-transform: translateX(-3px);
+         transform: translateX(-3px);
+     }
+     80%
+     {
+         -webkit-transform: translateX(2px);
+         transform: translateX(2px);
+     }
+     100%
+     {
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+     }
+ }
+ @keyframes swing
+ {
+     15%
+     {
+         -webkit-transform: translateX(5px);
+         transform: translateX(5px);
+     }
+     30%
+     {
+         -webkit-transform: translateX(-5px);
+         transform: translateX(-5px);
+     }
+     50%
+     {
+         -webkit-transform: translateX(3px);
+         transform: translateX(3px);
+     }
+     65%
+     {
+         -webkit-transform: translateX(-3px);
+         transform: translateX(-3px);
+     }
+     80%
+     {
+         -webkit-transform: translateX(2px);
+         transform: translateX(2px);
+     }
+     100%
+     {
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+     }
+ }
+       .engagementCol:hover , .produit:hover
+ {
+         -webkit-animation: swing 1s ease;
+         animation: swing 1s ease;
+         -webkit-animation-iteration-count: 1;
+         animation-iteration-count: 1;
+ }
+
+
+ /* END Animation div engagement index */
+/* Strat Animation div engagement index */
+.paralasic {
+	/* background:
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+    url(../images/desktop/top_page2.png);  */
+
+	background-attachment: fixed;
+	background-size: cover;
+	background-size: 100vw;
+	background-position: center top;
+	background-repeat: no-repeat;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+
+}
+.paralasicProd{
+    background:
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+    /* url(https://picsum.photos/1920/1280?image=611); */
+    url(../images/desktop/Produits.jpg);
+    background-attachment: fixed;
+	background-size: cover;
+	background-size: 100vw;
+	background-position: center top;
+	background-repeat: no-repeat;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+}
+.paralasicEntre{
+    background:
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+    url(../images/desktop/Entrepriseee.jpg);
+    background-attachment: fixed;
+	background-size: cover;
+	background-size: 100vw;
+	background-position: center top;
+	background-repeat: no-repeat;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+}
+.paralasic h1{
+    padding: 8.9% 25%; 
+    text-align: center;	
+    color: #fff;
+    }
+
+    .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 90%;
+  left: 10%;
+  top: 5%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  width: 100%;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.3);
+  -webkit-filter: brightness(0.3);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0 0 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  /* padding: 1em 0 0 0; */
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* END Animation div engagement index */
+ .carousel-control-next,
+        .carousel-control-prev {
+            opacity: 1!important;
+        }
+        
+        /* .carousel-control-prev {
+            position: absolute;
+            right: 96%!important;
+            left: inherit;
+            width: 0%;
+        }
+        
+        .carousel-control-next {
+            position: absolute;
+            left: 96%!important;
+            width: 0%;
+            right: inherit;
+        } 
+        
+        .prev,
+        .next {
+            position: absolute;
+            margin-top: 2px;
+        }
+        */
+        .next {
+            padding-left: 72%;
+        }
+        .prev {
+            padding-right: 72%;
+        }
+
+        .prev img,
+        .next img {
+            width: 100%
+        }
+        
+        .carousel-control-next-iconNext {
+            position: absolute;
+            right: 0;
+        }
+        
+        .carousel-control-prev-iconPrev {
+            position: absolute;
+            left: 0;
+        }
+        
+        /* .carousel-control-next-iconNext:after {
+            content: '>';
+            font-size: 80px;
+            color: black;
+            background-color: black;
+            font-weight: 100!important;
+        }
+        
+        .carousel-control-prev-iconPrev:after {
+            content: '<';
+            font-size: 80px;
+            color: black;
+            background-color: black;
+            font-weight: 100!important;
+        } */
+        
+        .secondCarouselContainer {
+           /*  position: relative;
+            bottom: 222px; */
+            justify-content: center!important;
+            position: relative;
+            top: -203px;
+            left: 0;
+            right: 0;
+        }
+        
+        .secondCarousel {
+           /*  bottom: 12vw; */
+            justify-content: center!important;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+        
+        .secondCarousel .owl-theme {
+            width: 252px!important;
+            height: 163px!important;
+            /*  left: 45%; */
+            background-color: white;
+            justify-content: center!important;
+            /*  margin: 0 auto!important; */
+        }
+        
+        .secondCarousel .item {
+            padding: 5px;
+        }
+        
+        .owl-dots {
+            display: none;
+        }
+        
+        .arrow-right {
+            width: 1%;
+            height: 0;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+            border-left: 16px solid white;
+            z-index: 1;
+            position: absolute;
+            left: 50%;
+            top: 43%
+        }
+        
+        .caption {
+            /* position: absolute !important; */
+            /* left: 67.3%!important ;
+    bottom: 0%!important; */
+            /* opacity: 0.6; */
+            /*  background-color: #36809d!important; */
+            background-color: rgba(54, 128, 157, 0.6)!important;
+        }
+        
+        .BtnPlus {
+            width: 38px;
+            height: 38px;
+            background-color: #6dafc9;
+            border-radius: 0!important;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .BtnPlus label {
+            font-size: 25px;
+            letter-spacing: -1px;
+            line-height: 35px;
+            color: #ffffff;
+            font-family: "Cairo";
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+            top: -5px;
+            right: 1px;
+        }
+        
+        .caption .owl-stage-outer,
+        .caption .owl-stage,
+        .caption .owl-item,
+        .caption .item {
+            height: 100%;
+        }
+        
+        .Show {
+            line-height: 28px;
+            color: #ffffff;
+            text-align: center;
+            /* box-shadow: 0px 6px 16px rgba(0,0,0,0.53); */
+            justify-content: center!important;
+            padding: 27px
+        }
+        
+        .ShowRoom {
+            font-size: 28px;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            font-family: "Cairo";
+        }
+        
+        .ShowDate {
+            font-size: 23px;
+            letter-spacing: 1px;
+            line-height: 28px;
+            color: #ffffff;
+            font-family: "Cairo";
+        }
+        
+        .owl-theme .owl-controls .owl-page {
+            display: inline-block;
+        }
+        
+        .owl-theme .owl-controls .owl-page span {
+            background: none repeat scroll 0 0 #869791;
+            border-radius: 20px;
+            display: block;
+            height: 12px;
+            margin: 5px 7px;
+            opacity: 0.5;
+            width: 12px;
+        }
+        .carousel-caption{
+            /* bottom: 3.2vh;
+            color: #ffffff;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            background-color: #020202c2;
+            height: 10vh;
+            justify-content: center!important;
+            width: 100%;
+            right: 0;
+            left: 0; */
+            background-color: #020202c2;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 15;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-left: 0;
+            list-style: none;
+            width: 100%;
+            padding-top: 30px;
+            height: 12vh;
+        } 
+        
+        .owl-carouselB > .owl-dots {
+            display: block;
+            margin-top: -36px!important;
+        }
+        
+        .owl-theme .owl-dots .owl-dot span {
+            background: white;
+            border-radius: 0;
+            margin: 5px 3px;
+        }
+        
+        .owl-theme .owl-dots .owl-dot.active span {
+            background: #7a756f;
+        }
+        
+        .SlideIndex {
+            /* box-shadow: 8px 8px 12px #aaa; */
+        }
+        
+        header {
+            max-height: 739px;
+            margin-top: 66px;
+        }
+        .headerIndex{
+            max-height:100% ;
+        }
+        .firstTitleIndex {
+            /* margin-top: -94px; */
+            margin-top: 60px;
+        }
+        .firstTitleIndex>p {
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .hrIndex {
+            height: 5px;
+            background-color: #7d7c78b0;
+        }
+        
+        .secondTextIndex {
+            text-align: center;
+            font-weight: 400;
+            text-align: justify;
+        }
+        
+        .hrIndexArrow {
+            background-color: #e4e4e4;
+        }
+        
+        .engagement {
+            font-size: 28px;
+            color: #221f20;
+            font-family: 'Cairo', sans-serif;;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 27px;
+            margin-bottom: 27px;
+        }
+        .engagementCol{
+          background-color: #e4e4e4;
+          text-align: center;/* 
+          width:15px!important; */
+        }
+        .engagementCol strong{
+            font-size: 2.7vh ;
+        }
+        .engagementCol object{
+            width: 74%;
+            margin-top: 31px;
+            margin-bottom: 31px;
+        }
+        .owl-carouselProduit .owl-next{
+            position: absolute;
+            right: 0%;
+            top: 25%;
+            background: none!important;
+        }
+        .owl-carouselProduit .owl-prev{
+            position: absolute;
+            left: 0%;
+            top: 25%;
+            background: none!important;
+        }
+        .owl-carouselProduit .owl-next span,.owl-carouselProduit .owl-prev span{
+            font-size: 96px;
+            font-weight: 100!important;
+        }
+        .captionSlideProduit {
+            background-color: #040404b0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            height: 41px;
+        }
+        .captionSlideProduit h4 {
+            color: white;
+            font-size: 17px;
+            margin-top: 9px;
+            margin-left: 7px;
+        }
+        .nosRefe{
+            margin-bottom: 70px;
+        }
+        .captionSlideReference{
+            background-color: #0000009c;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: left;
+        }
+        .captionSlideReference h4{
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 16px;
+            font-family: "Cairo";
+            font-weight: 100;
+            font-size: 20px;
+        
+            
+        }
+        .owl-carouselReference .owl-dots {
+            display: block;
+        }
+        .owl-carouselReference .owl-dots .owl-dot.active span {
+            background: black;
+        }
+        .owl-carouselReference .owl-dots .owl-dot span {
+            background: #a4998d;
+            border-radius: 0;
+            margin: 5px 3px;
+        }
+        footer{
+            color: white;
+            
+          }
+          
+          .test {
+            margin-top: -22px;
+        }
+        .contactFooter .row {
+          line-height: 30px;
+          text-align: left;
+          border-left: 1px solid white;
+        /* padding-left: 16px; */
+        margin-left: 7px;
+        }
+        .footerSlid{
+            display: none;
+        }
+        .owl-carouselFooter .owl-dots {
+                display: block;
+            }
+          .footer-bottom{
+            background: #100a0a;
+            padding: 2em;
+          }
+          .footer-middle{
+             background: #100a0a;
+            padding-top: 2em;
+            color: white;
+            border-bottom: 1px solid #323234;
+          }
+
+          .borderfooter{
+            border-left-style: solid;
+            border-left-width: 1px;
+          }
+          .comyrightTxt{
+              text-align: center;
+          }
+          .footer-middle {
+            font-weight: 300;   
+            text-align: center;
+          }
+          .footer-middle h4{
+            font-weight: 400;   
+            text-align: left;
+            margin-bottom: 28px;
+            font-size: 17px;
+            margin-left: 15px;
+          }
+          code{
+              color: white;
+          }
+          .dropdown-menu>a{
+            padding: 10px 6px;
+            background-color: #ecececd4   ;
+            color: black!important;
+            margin-top: 3px;
+            
+        }
+        .dropdown-menu{
+            padding: 0px 0;
+            background:#ada6a600 !important;
+        }
+        .dropdown-menu>a:focus, .dropdown-menu>a:hover
+            {
+                background-color: #a7a7a7d4;
+                color: white!important;
+            }
+
+        .borderfooter p, .entrepriseFooter p{
+            line-height: 15px;
+            font-size: 14px;
+            text-align: left;
+            margin: 15px;
+
+        }
+        .contacterFooter p{
+            margin-left: 19px;
+            text-align: left;
+        }
+
+        .contacterFooter i{
+            margin-top: 15px;
+            margin-left: 19px;
+        }
+        
+
+            
+  .margin h3{
+    margin-bottom: 49px; 
+    margin-top: 49px;   
+  }
+  .contenuRowIndex{
+    margin-top: 49px;
+  }
+  .mainfooter{
+      margin-top: 86px;
+  }
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 25px;
+}
+
+/* .footer-middle .col-lg-2{
+    max-width: 12.666667%;  
+}
+.clientIndexFooter {
+    max-width: 13% !important ;  
+}
+.devisIndexFooter  {
+    max-width: 19.666667% !important ;  
+}  */ 
+.owl-carouselProduit button.owl-next , .owl-carouselProduit button.owl-prev , .owl-carouselReference .owl-dot{
+    outline: none;
+}
+
+.titleEntre {
+    font-size: 32px;
+    color: #737172;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+.firstTitleEntre p{
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600; 
+    font-size: 26px;  
+}
+.firstTextEntre {
+    text-align: justify;
+    font-weight: 600;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-family: "Cairo";
+}
+
+.titleCardEntre p{
+    text-align: center;
+    font-weight: 700;
+    background-color: #000;
+    font-size: 16px;
+    font-family: "Cairo";
+    padding: 8px 0 8px 0;
+    color: white
+}
+
+
+.dark-bg-stats {
+    /* The image used */
+    background-image: url("../images/01.jpg");
+    /* Set a specific height */
+    min-height: 400px; 
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.numberParalax{
+    color: white;
+   
+}
+.rowPara h5{
+    font-weight: 400;
+}
+.rowPara{
+    margin-top: 25px;
+}
+.numberParalax:first-child  {
+margin-top: 169px;
+}
+.numberParalax h2{
+    font-weight: 700;
+    font-family: "Cairo";
+    font-size: 44px;
+}
+.textDEltaGroup{
+margin: 40px 0 49px 0;
+text-align: justify;
+    /* font-weight: 600; */
+    color: #4d4d4d;
+    font-size: 16px;
+    font-family: "Cairo";   
+}
+.produit img{
+    max-width: 100%;
+    }
+    .produit .BtnPlus{
+    right: 15px;
+    }
+    .produitTitleItem{
+        font-size: 22px;
+        color: #737172;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .secondCarouselContainer{
+        pointer-events: none;
+    }
+    .secondCarouselContainer button{
+        pointer-events: stroke;
+    }
+    
+    .produitParagItem p{
+        text-align: center;
+        font-weight: 600;
+        background-color: #8e8d8dc9;
+        font-size: 16px;
+        font-family: "Cairo";
+        padding: 5px 0 5px 0;
+        color: white;
+    }
+    .BtnPlus:hover label{
+        color:#6dafc9;
+        font-weight: 200;
+      }
+      
+      .BtnPlus label{
+        font-weight: 200;
+        top: -7px;;
+      }
+      
+      .BtnPlus:hover {
+              transition:all .5s ease;
+      background-color:#a6d7ea;
+      }
+      .BtnPlus {
+              transition:all .5s ease;
+             
+      }
+
+    /* Start Detaile produit */
+
+    td{
+        font-size: 14px;
+    }
+    th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+    }
+    th{
+        font-size: 12px;
+        
+    }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  #img3D{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+    .detailProduitTitle {
+        font-size: 32px;
+        color: #737172;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        text-align: left;
+        -top: 10px;
+    }
+    
+    .detailProduitParagItem p {
+        text-align: center;
+        font-weight: 600;
+        background-color: #8e8d8d;
+        font-size: 16px;
+        font-family: "Cairo";
+        padding: 5px 0 5px 0;
+        color: white;
+    }
+    
+    .sousTitleDetailSelected {
+        background-color: #dcdcdc;
+        font-weight: 700;
+        color: #6e6c6c;
+        cursor: pointer;
+    }
+    
+    .sousTitleDetail {
+        background-color: #f5f5f5;
+        font-weight: 600;
+        color: #737172;
+        cursor: pointer;
+    }
+    
+    .sousTitleDetailSelected h4,
+    .sousTitleDetail h4,.secondSideDetailProd:first-child  {
+        padding-left: 28px;
+        font-size: 21px;
+    }
+ .tableDetail{
+        /* margin-left: -12px; */
+        margin-right: 28px;
+    }
+    .img3D{
+        padding-top: 20px;
+    }
+    
+    .arrow-right-detailProd {
+        width: 1%;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 11px solid #797878;
+        z-index: 1;
+        position: absolute;
+        left: 24px;
+        margin-top: 1%;
+    }
+    
+    .detailImg{
+        padding-bottom: 15px;
+        padding: 0;
+    }
+    .detailImg img {
+        width: 100%;
+    }
+    .secondSideDetailProd{
+        background-color: #f5f5f5;
+        height: 100%;
+    }
+    .secondSideDetailProd {
+        padding-top: 14px;
+    }
+    #caracterestique li:before {
+        content: "- "; /* caractère UTF-8 */
+    }
+    .secondSideDetailProd ul{
+        margin-left: -57px;
+        margin-top: 18px;
+        list-style-type:none; 
+        font-size: 14px;
+        color: #5c5b5b;
+        font-family: "Cairo";
+        /* font-weight: 600; */
+        padding-right: 4px;
+    }
+    .demension{
+        line-height: 14px;
+        padding-top: 15px;
+        margin-left: 38px;
+    }
+    .cracteristique p{
+        padding-top: 15px;
+        margin-left: 38px;
+        padding-right: 48px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .detailImgSmall img {
+        width: 100%;
+        padding-top: 15px;
+        cursor: pointer;
+    }
+    .secondSideDetailProd h4,.colorText{
+        margin-left: -7px;
+        font-size: 20px;
+        color: #717070;
+        font-family: "Cairo";
+        font-weight: 700;
+        
+    }
+    .demension{
+        font-size: 15px;
+        color: #5c5b5b;
+        font-family: "Cairo";
+        font-weight: 700;
+    }
+    .captionCaracte{
+        background-color: #9db9ca;
+    }
+    .captionCaracte h5{
+        font-size: 17px;
+        color: #ffffff;
+        text-align: center; 
+    }
+    .captionCaracte h6{
+        font-size: 14px;
+        color: #5c5b5b;
+        text-align: center; 
+        font-weight: 700;
+    }
+    .block-telechager{
+        margin-top: 15%;
+cursor: pointer;
+width: 100%;
+display: inline-flex;
+height: 42px;
+-moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+}
+.block-right{
+width: 80%;
+}
+.block-right a{
+color:#000;
+text-decoration: none;
+}
+.block-right a:hover{
+color:#000;
+text-decoration: none;
+}
+.block-right a:active{
+color:#000;
+text-decoration: none;
+}
+.block-right p{
+line-height: 3;
+font-family: 'Cairo', sans-serif;
+}
+.block-left{
+width: 20%;
+}
+.img_icon_dowload
+{
+padding: 5px;
+border-right: 1px solid #00000052;
+
+height: 42px;
+}
+.color{
+background-color: #f5f5f5;
+margin-top: 30px;
+padding: 11px 30px 11px 30px;
+width: 100%;
+}
+.color .col-2{
+height: 35px;
+margin-right: 5px;
+
+}
+.color1{
+background-color: #380a0ad9;
+
+}
+.color2{
+background-color: #9fe0ca;
+
+}
+.color3{
+background-color: #a6a9a8;
+
+}
+.color4{
+background-color: #1b1d1c;
+
+}
+
+
+
+/* Agence Style */
+
+
+.titleAgence h4{
+    font-size: 24px;
+    color: #6e6c6c;
+    font-family: "Cairo";
+    font-weight: 400;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+.contacterAgence h5{
+    padding:  23px 0 11px 16px;
+    font-size: 17px;
+    color: #2c2c2c;
+    font-family: "Cairo";
+    font-weight: bold;
+}
+.contacterAgence p{
+    margin-left: 15px;
+    font-family: "Cairo";
+    font-weight: 200;
+    line-height: 12px;
+}
+.mapAgence img{
+    width: 100%;
+}
+.mapAgence{
+    padding: 12px 0 20px 0;
+    background-color: #f9f9f9; 
+    margin: 40px 0 94px 0; 
+}
+
+/* actualite style  */
+
+.actualite img{
+    width: 100%;
+}
+.actualite{
+    background-color: #f1efef;
+    padding: 19px 0 19px 0;
+}
+.actualite h4{
+    font-size: 29px;
+    color: #737172;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+.BtnPlus{
+    cursor: pointer;
+}
+.imgActualite{
+    width: 100%;
+    cursor: pointer;
+}
+.rowVideo{
+    padding: 80px 0 130px 0;
+}
+
+
+/* contacter form */
+
+.contentform{
+    margin-top: 20px;
+    background: #ececec;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+  }
+
+/* .number1{
+    left: 40px;
+  }
+.numberPara1{
+    right: 41px;
+  }
+  .number2{
+    left: 22px;
+  }
+.numberPara2{
+    right: 13px;
+  }
+  
+  .number3{
+    left: 27px;
+  }
+.numberPara3{
+    right: 9px;
+  } */
+
+  /* Animation caption index */
+  .animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100px, 0, 0);
+      transform: translate3d(100px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100px, 0, 0);
+      transform: translate3d(100px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    font-weight: 400;
+    font-size: 1vw;
+    /* position: absolute;
+    top: 2vh; */
+  }
+
+  .rowCirc{
+      margin-top: 28px;
+  }
+  .owl-carouselProduit .item , .engagementCol{
+      cursor: pointer;
+  }
+  .experience{
+    padding-left: 32px;
+  }
